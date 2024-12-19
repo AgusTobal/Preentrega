@@ -21,3 +21,47 @@ main{
      }
     
 }
+
+@media screen and(max-width:1024px) {
+    .nosotros{
+        h2{
+            @include nosotros-h3primeramq;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .nosotros-dos{
+        h3{
+           @include nosotros-h3primeramq;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and(max-width:520px) {
+    .nosotros{
+        h2{
+            @include nosotros-h3segundamq;
+        }
+
+        p{
+            font-size: 1.3rem;
+        }
+    }
+
+    .nosotros-dos{
+        h3{
+           @include nosotros-h3segundamq;
+        }
+
+        p{
+            font-size: 1.3rem;
+        }
+    }
+}
